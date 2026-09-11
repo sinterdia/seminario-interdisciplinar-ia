@@ -6,75 +6,11 @@
 <title>Otros Eventos IA — Seminario IA UAM</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="[el título de esa página]">
+<meta property="og:title" content="Otros Eventos IA — Seminario IA UAM">
 <meta property="og:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#F7F5F0;
-    --ink:#1F2623;
-    --ink-soft:#5B6560;
-    --accent:#3C5C4E;
-    --accent-soft:#E4E9E4;
-    --line:#DAD5C9;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'IBM Plex Sans', sans-serif;
-    line-height:1.55;
-  }
-  h1,h2,h3{
-    font-family:'Lora', serif;
-    font-weight:600;
-    margin:0;
-  }
-  a{color:var(--accent);}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 32px;}
-
-  nav{
-    display:flex;justify-content:space-between;align-items:center;
-    padding:28px 32px;max-width:1080px;margin:0 auto;
-  }
-  .brand{font-family:'Lora', serif;font-weight:600;font-size:17px;}
-  .navlinks{display:flex;gap:28px;font-size:14px;}
-  .navlinks a{text-decoration:none;color:var(--ink-soft);border-bottom:1px solid transparent;}
-  .navlinks a:hover{border-bottom:1px solid var(--accent);color:var(--ink);}
-  .navlinks a.active{color:var(--ink);border-bottom:1px solid var(--accent);}
-
-  .page-hero{padding:36px 0 8px;}
-  .page-hero h1{font-size:clamp(26px,3.4vw,34px);letter-spacing:-0.01em;}
-  .page-hero p{color:var(--ink-soft);margin-top:14px;font-size:16px;}
-
-  .list-row{
-    display:flex;flex-direction:column;gap:6px;
-    padding:22px 0;border-top:1px solid var(--line);
-  }
-  .list-row:last-child{border-bottom:1px solid var(--line);}
-  .list-row h3{font-size:17px;}
-  .list-row h3 a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);}
-  .list-row h3 a:hover{border-bottom-color:var(--accent);}
-  .list-row p{margin:0;font-size:14.5px;color:var(--ink-soft);}
-  .event-date{font-size:13px;color:var(--ink-soft);}
-
-  .events-grid{
-    display:grid;grid-template-columns:1fr 1fr;gap:0 48px;
-    margin-top:36px;align-items:start;
-  }
-  .events-col h2{font-size:19px;margin-bottom:4px;}
-
-  @media (max-width:700px){
-    .events-grid{grid-template-columns:1fr;}
-  }
-
-  footer{
-    padding:56px 0 56px;font-size:13px;color:var(--ink-soft);
-    border-top:1px solid var(--line);margin-top:56px;
-  }
-</style>
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
@@ -82,9 +18,9 @@
   <div class="brand">Seminario IA — UAM</div>
   <div class="navlinks">
     <a href="index.html">Inicio</a>
-    <a href="calendario-grabaciones.html">Calendario y Grabaciones</a>
+    <a href="calendario-grabaciones.html"><span class="full">Calendario y Grabaciones</span><span class="short">Calendario</span></a>
     <a href="organizadores.html">Organizadores</a>
-    <a href="otros-eventos.html" class="active">Otros Eventos IA</a>
+    <a href="otros-eventos.html" class="active"><span class="full">Otros Eventos IA</span><span class="short">Otros</span></a>
   </div>
 </nav>
 
@@ -114,7 +50,8 @@
   </div>
 
   <footer>
-    Seminario Interdisciplinar sobre Inteligencia Artificial — Universidad Autónoma de Madrid, campus de Cantoblanco.
+    <span>Seminario Interdisciplinar sobre Inteligencia Artificial — Universidad Autónoma de Madrid, campus de Cantoblanco.</span>
+    <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsinterdia%2Fcoordinacion%2Fdiscussions">Coordinadores</a>
   </footer>
 </div>
 
