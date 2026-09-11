@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendario y Grabaciones — Seminario IA UAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F5F0;
+    --ink:#1F2623;
+    --ink-soft:#5B6560;
+    --accent:#3C5C4E;
+    --accent-soft:#E4E9E4;
+    --line:#DAD5C9;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3{
+    font-family:'Lora', serif;
+    font-weight:600;
+    margin:0;
+  }
+  a{color:var(--accent);}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px;}
+
+  nav{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:28px 32px;max-width:1080px;margin:0 auto;
+  }
+  .brand{font-family:'Lora', serif;font-weight:600;font-size:17px;}
+  .navlinks{display:flex;gap:28px;font-size:14px;}
+  .navlinks a{text-decoration:none;color:var(--ink-soft);border-bottom:1px solid transparent;}
+  .navlinks a:hover{border-bottom:1px solid var(--accent);color:var(--ink);}
+  .navlinks a.active{color:var(--ink);border-bottom:1px solid var(--accent);}
+
+  .page-hero{padding:36px 0 8px;}
+  .page-hero h1{font-size:clamp(26px,3.4vw,34px);letter-spacing:-0.01em;}
+  .page-hero p{color:var(--ink-soft);margin-top:14px;max-width:62ch;font-size:16px;}
+
+  .section-title{font-size:19px;margin:52px 0 20px;}
+
+  .avisos{padding-bottom:8px;}
+  .aviso-row{
+    display:flex;gap:24px;padding:16px 0;border-top:1px solid var(--line);
+  }
+  .aviso-row:last-child{border-bottom:1px solid var(--line);}
+  .aviso-date{width:110px;flex-shrink:0;font-size:13px;color:var(--ink-soft);padding-top:2px;}
+  .aviso-title{font-size:15.5px;}
+  .aviso-title span{display:block;font-size:13px;color:var(--ink-soft);margin-top:3px;}
+
+  .empty-state{
+    padding:28px 0 8px;font-size:14.5px;color:var(--ink-soft);
+    border-top:1px solid var(--line);
+  }
+
+  footer{
+    padding:56px 0 56px;font-size:13px;color:var(--ink-soft);
+    border-top:1px solid var(--line);margin-top:56px;
+  }
+
+  @media (max-width:600px){
+    .aviso-row{flex-direction:column;gap:4px;}
+    .aviso-date{width:auto;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">Seminario IA — UAM</div>
+  <div class="navlinks">
+    <a href="index.html">Inicio</a>
+    <a href="calendario-grabaciones.html" class="active">Calendario y Grabaciones</a>
+    <a href="organizadores.html">Organizadores</a>
+    <a href="otros-eventos.html">Otros Eventos IA en el campus</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <section class="page-hero">
+    <h1>Calendario y grabaciones</h1>
+    <p>Todas las sesiones del seminario, con fecha, hora y sala. Después de cada sesión, el enlace a la grabación se añade aquí.</p>
+  </section>
+
+  <section class="avisos">
+    <h2 class="section-title">Próximas sesiones</h2>
+    <div class="aviso-row">
+      <div class="aviso-date">22 sept. 2026<br>14:00 h</div>
+      <div class="aviso-title">Álvaro Barbero — TBA
+        <span>Sala Polivalente, Plaza Mayor UAM</span>
+      </div>
+    </div>
+    <div class="aviso-row">
+      <div class="aviso-date">8 oct. 2026<br>14:00 h</div>
+      <div class="aviso-title">Sandra Arranz Paraíso — TBA
+        <span>Sala Polivalente, Plaza Mayor UAM</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Grabaciones anteriores</h2>
+    <p class="empty-state">Aún no hay grabaciones publicadas. Aparecerán aquí después de cada sesión.</p>
+    <!--
+      Plantilla para cuando haya una grabación (copiar y rellenar):
+      <div class="aviso-row">
+        <div class="aviso-date">FECHA</div>
+        <div class="aviso-title">Nombre del ponente — Título de la charla
+          <span><a href="URL_DE_YOUTUBE" target="_blank" rel="noopener">Ver la grabación en YouTube</a></span>
+        </div>
+      </div>
+    -->
+  </section>
+
+  <footer>
+    Seminario Interdisciplinar sobre Inteligencia Artificial — Universidad Autónoma de Madrid, campus de Cantoblanco.
+  </footer>
+</div>
+
+</body>
+</html>
